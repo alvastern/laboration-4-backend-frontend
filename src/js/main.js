@@ -5,6 +5,7 @@ import "../css/main.scss";
 const registerForm = document.getElementById("registerForm");
 const loginForm = document.getElementById("loginForm");
 const message = document.getElementById("message");
+const logoutButton = document.getElementById("logga-ut-btn");
 
 registerForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -69,4 +70,9 @@ loginForm.addEventListener("submit", async (event) => {
         message.textContent = "Något gick fel vid inloggning.";
         console.error(error);
     }
+});
+
+logoutButton.addEventListener("click", () => {
+    localStorage.removeItem("token");
+    window.location.href = "/index.html";
 });
