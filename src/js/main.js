@@ -71,8 +71,3 @@ loginForm.addEventListener("submit", async (event) => {
         console.error(error);
     }
 });
-
-logoutButton.addEventListener("click", () => {
-    localStorage.removeItem("token");
-    window.location.href = "/index.html";
-});
