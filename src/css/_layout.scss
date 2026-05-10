@@ -1,0 +1,13 @@
+#registerForm, #loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    width: 30vw;
+    margin: 0 auto 10vh auto;
+}
+
+input {
+    border-radius: 2rem;
+    border: none;
+    padding: 1.5vh 2vw;
+}

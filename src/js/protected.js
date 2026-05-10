@@ -1,5 +1,7 @@
 "use strict";
 
+import "../css/main.scss";
+
 const token = localStorage.getItem("token");
 
 if (!token) {
