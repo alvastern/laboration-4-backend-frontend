@@ -8,3 +8,9 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    button {
+        width: 80vw;
+    }
+}
